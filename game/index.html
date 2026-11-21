@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin Hunt — Spot the Difference</title>
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div id="stage">
+  <header id="hud">
+    <div class="brand">🔍 <span>TWIN HUNT</span></div>
+    <div class="pill" id="level-pill">Level 1 · Sunrise Harbour</div>
+    <div class="pill" id="found-pill">Found 0 / 7</div>
+    <div class="pill timer" id="timer-pill">⏱ 02:30</div>
+    <div class="pill score" id="score-pill">Score 0</div>
+  </header>
+  <div id="panels">
+    <div class="panel-label left">ORIGINAL</div>
+    <div class="panel-label right">SPOT THE DIFFERENCES</div>
+    <canvas id="game" width="1280" height="440"></canvas>
+  </div>
+  <div id="dots"></div>
+  <div id="message">Find all 7 differences — click a difference in either picture.</div>
+  <footer id="controls">
+    <button id="btn-hint" type="button">💡 Hint (H) · 3 left</button>
+    <button id="btn-sound" type="button">🔊 Sound on</button>
+    <button id="btn-restart" type="button">↻ Restart level (R)</button>
+    <button id="btn-menu" type="button">☰ Menu</button>
+  </footer>
+
+  <div id="overlay" class="hidden">
+    <div id="overlay-card">
+      <h1 id="overlay-title">Twin Hunt</h1>
+      <p id="overlay-text"></p>
+      <div id="overlay-stars"></div>
+      <button id="overlay-btn" type="button">Start hunting</button>
+    </div>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
